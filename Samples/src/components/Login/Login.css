@@ -1,0 +1,87 @@
+.form-container {
+    margin-top: 2rem;
+    width: 280px;
+    border-radius: 0.75rem;
+    background-color: #385457;
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    margin-bottom: 4%;
+  }
+  
+  
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    margin-top: 1.5rem;
+    padding:1.5rem 1rem 1rem 1rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  
+  .input-group label {
+    display: block;
+    color: rgb(255, 255, 255);
+    margin-bottom: 6px;
+  }
+  
+  .input-group input {
+    width: 70%;
+    height: 20px;
+    border-radius: 0.78rem;
+    border: 1px solid #000;
+    outline: 0;
+    background-color: #ffffff;
+    padding: 0.3rem 1rem;
+    color: rgb(0, 0, 0);
+  }
+  
+  .input-group input:focus {
+    border-color: #258278;
+  }
+  
+  .sign {
+
+    width: 40%;
+    background-color: #258278;
+    padding: .8rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .line {
+    height: 1px;
+    flex: 1 1 0%;
+    background-color: rgba(55, 65, 81, 1);
+  }
+.ButtonJoin{
+    margin:70px 0px 15px 0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
