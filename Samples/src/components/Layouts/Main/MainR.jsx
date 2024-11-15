@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Main.css";
 import { Search } from "../../Search/Search";
+import { RequestsTable } from "../../RequestsTable/RequestsTable";
+import NewRequestModal from "../../Modals/NewModal/NewRequestModal";
 
 export const MainR = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleNewRequest = () => {
+    setShowModal(true);
+  }
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  }
+
   return (
     <>
       <div className="MainR">
         <div className="Title">
-          <h1 className="JoinTitle">MY REQUESTS</h1>
+          <h1 className="JoinTitleR">MY REQUESTS</h1>
         </div>
         <div className="SearchAndNew">
           <div className="SearchContainer">
@@ -19,10 +31,14 @@ export const MainR = () => {
             </div>
           </div>
           <div className="ButtonNew">
-          <button class="signR">NEW</button>
+            <button className="signR" onClick={handleNewRequest}>NEW</button>
           </div>
         </div>
+        <div className="RequestContainer">
+          <RequestsTable/>
+        </div>
       </div>
+      {showModal && <NewRequestModal onClose={handleCloseModal} />}
     </>
   );
 };

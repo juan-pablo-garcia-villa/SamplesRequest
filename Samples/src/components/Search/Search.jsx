@@ -5,7 +5,7 @@ export const Search = () => {
     /* From Uiverse.io by OnlyCodeChannel */ 
 <div class="searchBox">
 
-<input class="searchInput" type="text" name="" placeholder="CONSECUTIVE"></input>
+<input class="searchInput" type="number" name="" placeholder="CONSECUTIVE"></input>
 <button class="searchButton" href="#">
        
       

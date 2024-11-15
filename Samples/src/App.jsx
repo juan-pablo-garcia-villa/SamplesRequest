@@ -6,6 +6,7 @@ import './index.css'
 import { Home } from './components/Pages/Home/Home'
 import { Requests } from './components/Pages/Requests/Requests'
 import { NewRequests } from './components/Pages/NewRequests/NewRequests'
+import { MainNewClient } from './components/Layouts/Main/MainNewClient';
 function App() {
 
 
@@ -19,6 +20,7 @@ function App() {
     <Route path="/" component={Home} />
     <Route path="/requests" component={Requests} />
     <Route path="/new-requests" component={NewRequests} />
+    <Route path="/new-client" component={MainNewClient} />
   </div>
 );
 }
